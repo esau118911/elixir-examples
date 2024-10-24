@@ -1,5 +1,4 @@
 # Ejemplo de un Mapa
-
 persona = %{
   nombre: "Esau",
   edad: 26,
@@ -19,9 +18,7 @@ eliminado_edad = Map.delete(persona, :edad)
 existe_ciudad = Map.has_key?(persona, :ciudad)  # true
 
 # Iterando sobre un mapa
-Enum.each(persona, fn {clave, valor} ->
-  IO.inspect("#{clave}: #{valor}")
-end)
+Enum.each(persona, fn {clave, valor} -> IO.inspect("#{clave}: #{valor}") end)
 
 # Devolver una lista de valores
 nombres = Enum.map(persona, fn {clave, valor} -> valor end)
