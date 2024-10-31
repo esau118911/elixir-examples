@@ -8,7 +8,7 @@ defmodule CaptureDiscount do
 
   ## Examples:
     iex> products = %{"Monitor" => 3000, "Mouse" => 100, "Teclado" => 400}
-    iex> Discount.apply_discount(products, 0.10)
+    iex> CaptureDiscount.apply_discount(products, 0.10)
     %{"Monitor" => 2700.0, "Mouse" => 90.0, "Teclado" => 360.0}
   """
   def apply_discount(products, discount) do
@@ -23,7 +23,7 @@ defmodule CaptureDiscount do
 
   ## Examples:
     iex> product = %{product: "Monitor", price: 3000, discount: 0.10}
-    iex> Discount.discount_product(%{})
+    iex> CaptureDiscount.discount_product(%{})
     {"Monitor", 2700.0}
   """
 
