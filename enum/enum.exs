@@ -8,7 +8,7 @@ defmodule EnumExample do
 
   ## Examples:
     iex> frusts = [:apple, :banana, :kiwi]
-    iex> EnumExample.filter_fruits(frusts)
+    iex> EnumExample.filter_fruits(frusts, "a")
   """
   def filter_fruits(fruits \\ [], prefix) do
     Enum.filter(fruits, fn atom -> String.starts_with?(Atom.to_string(atom), prefix) end)

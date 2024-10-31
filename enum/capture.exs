@@ -5,9 +5,10 @@ defmodule CaptureOperator do
 
   @doc """
   Función para filtrar una lista de átomos y obtener solo aquellos que comienza con :a
+
   ## Examples:
   iex> frusts = [:apple, :banana, :kiwi]
-  iex> EnumExample.filter_fruits(frusts)
+  iex> EnumExample.filter_fruits(frusts, "b")
   """
   def filter_fruits(fruits \\ [], prefix) do
     Enum.filter(fruits, &String.starts_with?(Atom.to_string(&1), prefix))
