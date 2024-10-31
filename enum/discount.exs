@@ -21,7 +21,7 @@ defmodule Discount do
 
   ## Examples:
     iex> product = %{product: "Monitor", price: 3000, discount: 0.10}
-    iex> Discount.discount_product(%{})
+    iex> Discount.discount_product(product)
     {"Monitor", 2700.0}
   """
 
