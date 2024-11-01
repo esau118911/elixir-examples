@@ -4,7 +4,7 @@ defmodule EnumExample do
   """
 
   @doc """
-  Función para filtrar una lista de átomos y obtener solo aquellos que comienza con :a
+  Función para filtrar una lista de átomos y obtener solo aquellos que comienza con a
 
   ## Examples:
     iex> frusts = [:apple, :banana, :kiwi]

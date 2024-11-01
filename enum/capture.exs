@@ -8,7 +8,7 @@ defmodule CaptureOperator do
 
   ## Examples:
   iex> frusts = [:apple, :banana, :kiwi]
-  iex> EnumExample.filter_fruits(frusts, "b")
+  iex> EnumExample.filter_fruits(frusts, ":a")
   """
   def filter_fruits(fruits \\ [], prefix) do
     Enum.filter(fruits, &String.starts_with?(Atom.to_string(&1), prefix))
